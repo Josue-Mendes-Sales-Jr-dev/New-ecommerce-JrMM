@@ -1,0 +1,82 @@
+
+.nav{
+    width: 100vw;
+    
+    
+}
+.menu-text{
+   width: 100vw;
+  
+}
+.menu-text .row{
+    width: 100vw;
+    background-color: rgb(238, 222, 202);
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+   
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+.me-auto{
+    margin: 0 auto;
+}
+.logo01{
+    background-color: rgb(197, 197, 212);
+    padding: .5rem;
+    border: 2px solid rgba(58, 58, 65, 0.158);
+    border-radius: .3rem;
+}
+
+
+.menu-text .row .menu-text01{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100vw;
+    height: 25rem;
+    
+    
+}
+.menu-text .row .menu-text01 h1{
+    font-size: 3rem;
+}
+.menu-text .row .menu-text01 p{
+    font-size: 2rem;
+}
+
+
+
+@media screen and (max-width:1000px){
+    
+    .menu-text .row{
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .menu-text .row .menu-text01 h1{
+        font-size: 2.5rem;
+        
+    }
+    .menu-text .row .menu-text01 p{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-height:420px){
+    .menu-text .row{
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    
+   
+    
+}

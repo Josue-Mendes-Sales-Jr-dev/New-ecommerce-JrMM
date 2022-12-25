@@ -1,0 +1,76 @@
+.destaques{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding: 1rem;
+    
+    
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.active .card-main{
+   display: none;
+}
+.cards .card-main{
+    width: 20rem;
+    padding: .01rem;
+}
+.cards .card-main .image{
+    max-width: 20rem;
+    height: 20rem;
+}
+
+.card-main:hover{
+    box-shadow: 6px 6xp 6px 6px;
+}
+.card-main h2, .card-main strong{
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-top: .5rem;
+}
+
+.card-main button{
+    border: none;
+    background-color: transparent;
+}
+
+.card-main .icon{
+    z-index: 2;
+    background-color: bisque;
+    height: 2rem;
+}
+
+
+@media screen and (max-width:1200px){
+    
+    .cards .card-main{
+        min-width:12rem;
+        height: 17.5rem;
+        margin: .5rem;
+        overflow: hidden;
+    }
+    .cards .card-main .image{
+      min-width:11rem;
+      height: 10rem;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards .card-main {
+        height: 30rem;
+        padding: .01rem;
+    }
+    .cards .card-main .image{
+        height: 25rem;
+        padding: .01rem;
+    }
+}

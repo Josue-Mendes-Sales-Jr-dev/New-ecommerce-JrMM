@@ -1,0 +1,99 @@
+.box-ct{
+  background-color: rgba(0, 0, 0, 0.808);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:7rem;
+ 
+ 
+}
+/*social*/
+.ct-social{
+    display: flex;
+    margin: 1rem;
+}
+.ct-social h2{
+    font-size: 1.3rem;
+    margin-right: .5rem;
+    color: white;
+
+}
+.ct-social a{
+    font-size: 1.1rem;
+    color: rgb(182, 192, 192);
+
+}
+/* form*/
+.form-ct h2{
+    color: white;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3rem;
+    background-color:transparent;
+    padding: 1rem;
+    border-radius: .5rem;
+    height: 100%;
+    padding: 1.5rem;
+    
+    
+}
+
+label{
+    color: white;
+
+}
+
+form input{
+    outline: none;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+
+}
+
+form input:nth-child(7){
+
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    height: 2rem;
+    width: 10rem;
+    margin: 1rem auto;
+    border-radius: .5rem;
+}
+
+form input:nth-child(7):hover{
+     color: black;
+     background-color: white;
+}
+
+@media screen and (max-width:800px){
+    .ct-social{
+        align-items: center;
+        justify-content: center;
+    }
+    .ct-social h2{
+        font-size: 1.3rem;
+        margin-right: .5rem;
+        color: white;
+    
+    }
+    .ct-social a{
+        font-size: 1rem;
+        color: rgb(182, 192, 192);
+    
+    }
+    
+    .form-ct h2{
+        margin-top: 4rem;
+        color: white;
+    }
+}
