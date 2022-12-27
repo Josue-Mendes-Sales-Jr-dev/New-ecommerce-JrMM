@@ -7,7 +7,8 @@ const Footer=()=>{
                     
                     <div className="container footer-link"> 
                     <h4 className='mb-4'>Lojas</h4>
-                    <a href='/#'>JM Porto</a>
+                    <a href='/#'>JM Pernambuco</a>
+                    <a href='/#'>JM Piauí</a>
                     <a href='/#'>JM São Paulo</a>
                     <a href='/#'>JM Rio de janeiro</a>
                     </div>

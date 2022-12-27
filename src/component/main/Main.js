@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPlus} from '@fortawesome/free-solid-svg-icons'
+import {faBasketShopping} from '@fortawesome/free-solid-svg-icons'
 import './main.css' 
 
 
@@ -60,6 +61,41 @@ const Main=(props)=>{
     C1.classList.remove('c1')
     
   }
+  
+  
+}
+function car() {   
+  const C=document.getElementById('C')
+  C.classList.toggle('jaquetaColor')
+  
+  if(C.classList.contains('jaquetaColor')){
+  C.style.backgroundColor='rgb(179, 240, 209)'}else{
+    C.style.backgroundColor='white'
+  }
+}
+function car1(){   
+
+  const C1=document.getElementById('C1')
+ 
+  C1.classList.toggle('jaquetaColor1')
+
+  if(C1.classList.contains('jaquetaColor1')){
+    C1.style.backgroundColor='rgb(179, 240, 209)'}else{
+      C1.style.backgroundColor='white'
+    }
+ 
+}
+function car2(){   
+
+  const C2=document.getElementById('C2')
+ 
+  C2.classList.toggle('jaquetaColor2')
+
+  if(C2.classList.contains('jaquetaColor2')){
+    C2.style.backgroundColor='rgb(179, 240, 209)'}else{
+      C2.style.backgroundColor='white'
+    }
+ 
 }
         return(
         <div className="container destaques" id='Main'>
@@ -69,8 +105,16 @@ const Main=(props)=>{
 
             
                <div className="card card-main " id='C' >
-                <h2>{props.name}</h2>
-                <p><strong>{props.price}</strong></p>
+                <div className='row'>
+                  <div className='col-8'>
+                    <h2>{props.name}</h2>
+                    <p><strong>{props.price}</strong></p>
+                  </div>
+                  <div className='col-4 basket'>
+                    <button onClick={car}><FontAwesomeIcon icon={faBasketShopping} /></button>
+                    </div>
+
+                </div>
                 <img className='image img-fluid'src={props.Photo} alt='perfil'/>
                 <div className='icon text-center pt-1'>
                   <button  onClick={done}>
@@ -78,14 +122,20 @@ const Main=(props)=>{
                   </button>
                 </div>
                </div>
-
-
-
                
                
                <div className="card card-main  " id='C1'>
-                <h2>{props.name1}</h2>
-                <p><strong>{props.price1}</strong></p>
+               <div className='row'>
+                  <div className='col-8'>
+                    <h2>{props.name1}</h2>
+                    <p><strong>{props.price1}</strong></p>
+                  </div>
+                  <div className='col-4 basket'>
+                    <button onClick={car1}><FontAwesomeIcon icon={faBasketShopping} /></button>
+                    </div>
+
+                </div>
+          
                 <img className='image img-fluid'src={props.Photo1} alt='perfil'/>
                 <div className='icon text-center pt-1'>
                     <button onClick={done1} >
@@ -95,8 +145,16 @@ const Main=(props)=>{
                </div>
                
                <div className="card card-main " id='C2'>
-                <h2>{props.name2}</h2>
-                <p><strong>{props.price2}</strong></p>
+               <div className='row'>
+                  <div className='col-8'>
+                    <h2>{props.name2}</h2>
+                    <p><strong>{props.price2}</strong></p>
+                  </div>
+                  <div className='col-4 basket'>
+                    <button onClick={car2}><FontAwesomeIcon icon={faBasketShopping} /></button>
+                    </div>
+
+                </div>
                 <img className='image img-fluid'src={props.Photo2} alt='perfil'/>
                 <div className='icon text-center pt-1'>
                     <button onClick={done2} >
