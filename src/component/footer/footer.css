@@ -50,9 +50,13 @@
 }
 
 @media screen and (max-height:420px) {
+    .footer{
+        height: 85vh;
+    }
     .footer-text{
         display: flex;
-        height: 65vh;
+        height: 70vh;
+        
         
     }
 }
