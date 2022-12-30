@@ -69,7 +69,7 @@ function car() {
   C.classList.toggle('jaquetaColor')
   
   if(C.classList.contains('jaquetaColor')){
-  C.style.backgroundColor='rgb(179, 240, 209)'}else{
+  C.style.backgroundColor='rgb(96, 255, 189)'}else{
     C.style.backgroundColor='white'
   }
 }
@@ -80,7 +80,7 @@ function car1(){
   C1.classList.toggle('jaquetaColor1')
 
   if(C1.classList.contains('jaquetaColor1')){
-    C1.style.backgroundColor='rgb(179, 240, 209)'}else{
+    C1.style.backgroundColor='rgb(96, 255, 189)'}else{
       C1.style.backgroundColor='white'
     }
  
@@ -92,7 +92,7 @@ function car2(){
   C2.classList.toggle('jaquetaColor2')
 
   if(C2.classList.contains('jaquetaColor2')){
-    C2.style.backgroundColor='rgb(179, 240, 209)'}else{
+    C2.style.backgroundColor='rgb(96, 255, 189)'}else{
       C2.style.backgroundColor='white'
     }
  
@@ -164,89 +164,164 @@ function car2(){
                </div>
            </div> 
            
+
         <div className=' container active'id='Feito'>
+          
             <div className='container cards'>   
+            
              <div className="card card-main">
-            <h2>{props.name}</h2>
-             <p><strong>{props.price}</strong></p>
+               <div className='row'>
+               <div className='col-8'>
+                 <h2>{props.name}</h2>
+                 <p><strong>{props.price}</strong></p>
+               </div>
+               <div className='col-4 basket'>
+                <button >
+                <FontAwesomeIcon icon={faBasketShopping} />
+                </button>
+                
+               </div>
+               
+             </div>
             <img className='image img-fluid'src={props.Photo} alt='perfil'/>
             <div className='icon text-center pt-1'>
             <button  onClick={done}>
-     
-         <FontAwesomeIcon icon={faPlus} />
-     
+              <FontAwesomeIcon icon={faPlus} />
            </button>
          </div>
          </div>
 
-        <div className="card card-main">
-        <h2>{props.name}</h2>
-          <p><strong>{props.price}</strong></p>
-         <img className='image img-fluid'src={props.Photo} alt='perfil'/>
-         <div className='icon text-center pt-1'>
-         <button onClick={done}>
-         <FontAwesomeIcon icon={faPlus} />
-       </button>
-      </div>
-          </div>
+         <div className="card card-main">
+               <div className='row'>
+               <div className='col-8'>
+                 <h2>{props.name}</h2>
+                 <p><strong>{props.price}</strong></p>
+               </div>
+               <div className='col-4 basket'>
+                <button >
+                <FontAwesomeIcon icon={faBasketShopping} />
+                </button>
+                
+               </div>
+               
+             </div>
+            <img className='image img-fluid'src={props.Photo} alt='perfil'/>
+            <div className='icon text-center pt-1'>
+            <button  onClick={done}>
+              <FontAwesomeIcon icon={faPlus} />
+           </button>
+         </div>
+         </div>
 
          <div className="card card-main">
-        <h2>{props.name}</h2>
-       <p><strong>{props.price}</strong></p>
-      <img className='image img-fluid'src={props.Photo} alt='perfil'/>
-       <div className='icon text-center pt-1'>
-     <button onClick={done}>
-         <FontAwesomeIcon icon={faPlus} />
-     </button>
-        </div>
-       </div>
+               <div className='row'>
+               <div className='col-8'>
+                 <h2>{props.name}</h2>
+                 <p><strong>{props.price}</strong></p>
+               </div>
+               <div className='col-4 basket'>
+                <button >
+                <FontAwesomeIcon icon={faBasketShopping} />
+                </button>
+                
+               </div>
+               
+             </div>
+            <img className='image img-fluid'src={props.Photo} alt='perfil'/>
+            <div className='icon text-center pt-1'>
+            <button  onClick={done}>
+              <FontAwesomeIcon icon={faPlus} />
+           </button>
+         </div>
+         </div>
             </div> 
 
-            <div className='container cards'>
-
+            <div className='container cards'>   
             
-               <div className="card card-main">
-                <h2>{props.name}</h2>
-                <p><strong>{props.price}</strong></p>
-                <img className='image img-fluid'src={props.Photo} alt='perfil'/>
-                <div className='icon text-center pt-1'>
-                  <button  onClick={done}>
-                    
-                        <FontAwesomeIcon icon={faPlus} />
-                    
-                  </button>
-                </div>
-               </div>
-               
-               <div className="card card-main">
-                <h2>{props.name}</h2>
-                <p><strong>{props.price}</strong></p>
-                <img className='image img-fluid'src={props.Photo} alt='perfil'/>
-                <div className='icon text-center pt-1'>
-                    <button onClick={done}>
-                        <FontAwesomeIcon icon={faPlus} />
-                    </button>
-                </div>
-               </div>
-               
-               <div className="card card-main">
-                <h2>{props.name}</h2>
-                <p><strong>{props.price}</strong></p>
-                <img className='image img-fluid'src={props.Photo} alt='perfil'/>
-                <div className='icon text-center pt-1'>
-                    <button onClick={done}>
-                        <FontAwesomeIcon icon={faPlus} />
-                    </button>
-                    </div>
-               </div>
-           </div> 
+            <div className="card card-main">
+            <div className='row'>
+            <div className='col-8'>
+              <h2>{props.name}</h2>
+              <p><strong>{props.price}</strong></p>
+            </div>
+            <div className='col-4 basket'>
+             <button >
+             <FontAwesomeIcon icon={faBasketShopping} />
+             </button>
+             
+            </div>
+            
+          </div>
+         <img className='image img-fluid'src={props.Photo} alt='perfil'/>
+         <div className='icon text-center pt-1'>
+         <button  onClick={done}>
+           <FontAwesomeIcon icon={faPlus} />
+        </button>
+      </div>
+      </div>
+
+      <div className="card card-main">
+            <div className='row'>
+            <div className='col-8'>
+              <h2>{props.name}</h2>
+              <p><strong>{props.price}</strong></p>
+            </div>
+            <div className='col-4 basket'>
+             <button >
+             <FontAwesomeIcon icon={faBasketShopping} />
+             </button>
+             
+            </div>
+            
+          </div>
+         <img className='image img-fluid'src={props.Photo} alt='perfil'/>
+         <div className='icon text-center pt-1'>
+         <button  onClick={done}>
+           <FontAwesomeIcon icon={faPlus} />
+        </button>
+      </div>
+      </div>
+
+      <div className="card card-main">
+            <div className='row'>
+            <div className='col-8'>
+              <h2>{props.name}</h2>
+              <p><strong>{props.price}</strong></p>
+            </div>
+            <div className='col-4 basket'>
+             <button >
+             <FontAwesomeIcon icon={faBasketShopping} />
+             </button>
+             
+            </div>
+            
+          </div>
+         <img className='image img-fluid'src={props.Photo} alt='perfil'/>
+         <div className='icon text-center pt-1'>
+         <button  onClick={done}>
+           <FontAwesomeIcon icon={faPlus} />
+        </button>
+      </div>
+      </div>
+         </div>
+   
         </div>
            
         <div className=' container active'id='Feito1'>
             <div className='container cards'>   
              <div className="card card-main">
-            <h2>{props.name1}</h2>
-             <p><strong>{props.price}</strong></p>
+            <div className='row'>
+              <div className='col-8'>
+                <h2>{props.name1}</h2>
+                 <p><strong>{props.price}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>
+                
+             </div>
+            </div>
             <img className='image img-fluid'src={props.Photo1} alt='perfil'/>
             <div className='icon text-center pt-1'>
             <button  onClick={done1}>
@@ -258,8 +333,17 @@ function car2(){
          </div>
 
         <div className="card card-main">
-        <h2>{props.name1}</h2>
-          <p><strong>{props.price}</strong></p>
+            <div className='row'>
+              <div className='col-8'>
+                <h2>{props.name1}</h2>
+                 <p><strong>{props.price}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
          <img className='image img-fluid'src={props.Photo1} alt='perfil'/>
          <div className='icon text-center pt-1'>
          <button onClick={done1}>
@@ -269,8 +353,17 @@ function car2(){
           </div>
 
          <div className="card card-main">
-        <h2>{props.name1}</h2>
-       <p><strong>{props.price}</strong></p>
+         <div className='row'>
+              <div className='col-8'>
+                <h2>{props.name1}</h2>
+                 <p><strong>{props.price}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
       <img className='image img-fluid'src={props.Photo1} alt='perfil'/>
        <div className='icon text-center pt-1'>
      <button onClick={done1}>
@@ -284,8 +377,17 @@ function car2(){
 
             
                <div className="card card-main">
+               <div className='row'>
+              <div className='col-8'>
                 <h2>{props.name1}</h2>
-                <p><strong>{props.price}</strong></p>
+                 <p><strong>{props.price}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
                 <img className='image img-fluid'src={props.Photo1} alt='perfil'/>
                 <div className='icon text-center pt-1'>
                   <button  onClick={done1}>
@@ -297,8 +399,17 @@ function car2(){
                </div>
                
                <div className="card card-main">
+               <div className='row'>
+              <div className='col-8'>
                 <h2>{props.name1}</h2>
-                <p><strong>{props.price}</strong></p>
+                 <p><strong>{props.price}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
                 <img className='image img-fluid'src={props.Photo1} alt='perfil'/>
                 <div className='icon text-center pt-1'>
                     <button onClick={done1}>
@@ -308,8 +419,17 @@ function car2(){
                </div>
                
                <div className="card card-main">
+               <div className='row'>
+              <div className='col-8'>
                 <h2>{props.name1}</h2>
-                <p><strong>{props.price}</strong></p>
+                 <p><strong>{props.price}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
                 <img className='image img-fluid'src={props.Photo1} alt='perfil'/>
                 <div className='icon text-center pt-1'>
                     <button onClick={done1}>
@@ -323,8 +443,17 @@ function car2(){
         <div className=' container active'id='Feito2'>
             <div className='container cards'>   
              <div className="card card-main">
-            <h2>{props.name2}</h2>
-             <p><strong>{props.price2}</strong></p>
+             <div className='row'>
+              <div className='col-8'>
+                <h2>{props.name2}</h2>
+                 <p><strong>{props.price2}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
             <img className='image img-fluid'src={props.Photo2} alt='perfil'/>
             <div className='icon text-center pt-1'>
             <button  onClick={done2}>
@@ -336,8 +465,17 @@ function car2(){
          </div>
 
         <div className="card card-main">
-        <h2>{props.name2}</h2>
-          <p><strong>{props.price}</strong></p>
+        <div className='row'>
+              <div className='col-8'>
+                <h2>{props.name2}</h2>
+                 <p><strong>{props.price2}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
          <img className='image img-fluid'src={props.Photo2} alt='perfil'/>
          <div className='icon text-center pt-1'>
          <button onClick={done2}>
@@ -347,8 +485,17 @@ function car2(){
           </div>
 
          <div className="card card-main">
-        <h2>{props.name2}</h2>
-       <p><strong>{props.price}</strong></p>
+         <div className='row'>
+              <div className='col-8'>
+                <h2>{props.name2}</h2>
+                 <p><strong>{props.price2}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
       <img className='image img-fluid'src={props.Photo2} alt='perfil'/>
        <div className='icon text-center pt-1'>
      <button onClick={done2}>
@@ -362,8 +509,17 @@ function car2(){
 
             
                <div className="card card-main">
+               <div className='row'>
+              <div className='col-8'>
                 <h2>{props.name2}</h2>
-                <p><strong>{props.price}</strong></p>
+                 <p><strong>{props.price2}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
                 <img className='image img-fluid'src={props.Photo2} alt='perfil'/>
                 <div className='icon text-center pt-1'>
                   <button  onClick={done}>
@@ -375,8 +531,17 @@ function car2(){
                </div>
                
                <div className="card card-main">
+               <div className='row'>
+              <div className='col-8'>
                 <h2>{props.name2}</h2>
-                <p><strong>{props.price2}</strong></p>
+                 <p><strong>{props.price2}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
                 <img className='image img-fluid'src={props.Photo2} alt='perfil'/>
                 <div className='icon text-center pt-1'>
                     <button onClick={done2}>
@@ -386,8 +551,17 @@ function car2(){
                </div>
                
                <div className="card card-main">
+               <div className='row'>
+              <div className='col-8'>
                 <h2>{props.name2}</h2>
-                <p><strong>{props.price2}</strong></p>
+                 <p><strong>{props.price2}</strong></p>
+              </div>
+             <div className='col-4 basket'>
+                <button>
+                  <FontAwesomeIcon icon={faBasketShopping} />
+                </button>   
+             </div>
+            </div>
                 <img className='image img-fluid'src={props.Photo2} alt='perfil'/>
                 <div className='icon text-center pt-1'>
                     <button onClick={done2}>

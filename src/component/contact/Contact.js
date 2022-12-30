@@ -42,7 +42,7 @@ const Contact=(props)=>{
                         <input id='name' type='text' placeholder='Digite seu nome'/>
                         <label htmlFor='#email'>Email:</label>
                         <input id='email' type='text' placeholder='Digite seu email'/>
-                        <label htmlFor='#text' >Write:</label>
+                        <label htmlFor='#text' >Message:</label>
                         <input id='white' type='text' placeholder='Escreva..'/>
                         <input type='button' id='btn-input' value='enviar'/>
                        </form>

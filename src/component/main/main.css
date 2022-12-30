@@ -11,6 +11,8 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    
+
 }
 .cards{
     display: flex;
@@ -25,12 +27,12 @@
     display: none;
 }
 .cards .card-main{
-    width: 20rem;
+    width: 17rem;
     padding: .01rem;
+    margin: .2rem;
 }
 .cards .card-main .image{
-    max-width: 20rem;
-    height: 20rem;
+    height: 14rem;
 }
 
 .card-main:hover{
@@ -80,7 +82,7 @@
         padding: .01rem;
     }
     .cards .card-main .image{
-        height: 25rem;
+        height: 22rem;
         padding: .01rem;
     }
     .card-main h2, .card-main strong{
@@ -97,12 +99,33 @@
         flex-direction: column;
         
     }
-    .cards .card-main {
-        height: 32rem;
+    .cards .card-main{
+        width: 19rem;
+        height: 28rem;
         padding: .01rem;
     }
     .cards .card-main .image{
-        height: 25rem;
+        height: 20rem;
+        padding: .01rem;
+    }
+}
+
+@media screen and (max-height:420px){
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .cards .card-main{
+        
+        width: 19rem;
+        height: 18rem;
+        padding: .01rem;
+    }
+    
+    .cards .card-main .image{
+        height: 10rem;
         padding: .01rem;
     }
 }

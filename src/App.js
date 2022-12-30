@@ -36,7 +36,7 @@ function App() {
         <Header />
         <Main
           title="Destaques"
-          name="Jaquetá"
+          name="Jaqueta"
           name1="Calça"
           name2="Óculos"
           price="R$ 800"

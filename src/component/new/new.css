@@ -9,6 +9,10 @@
 }
 .cardd{
   width: 17rem;
+  
+}
+.image-Card{
+  height: 18rem;
 }
 
 @media screen and (min-width:800px) and (max-width:1180px) {
